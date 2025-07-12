@@ -1,4 +1,8 @@
-output "weeb_endpoint" {
-  value = aws_s3_bucket.tfwebbucket321.website_endpoint
+/*output "public_subnet_ids" {
+  value = [for subnet in aws_subnet.public_subnets : subnet.id]
 }
-  
+
+output "private_subnet_ids" {
+  value = [for subnet in aws_subnet.private_subnets : subnet.id]
+}
+*/
